@@ -37,6 +37,9 @@ const frame0 = () => {
         frame1()
     }, 2500);
 }
-$(() => {
+window.onload = function() {
+    $(() => {
+    $('.loader').addClass('inv')
     frame0()
-});
+    });
+};
