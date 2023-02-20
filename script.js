@@ -4,7 +4,7 @@ const frame4 = () => {
     $('#sl5').removeClass('inv')
     setTimeout(() => {
         frame0()
-    }, 1000);
+    }, 2500);
 }
 const frame3 = () => {
     $('#sl3').addClass('inv')
@@ -12,7 +12,7 @@ const frame3 = () => {
     $('#sl4').removeClass('inv')
     setTimeout(() => {
         frame4()
-    }, 1000);
+    }, 2500);
 }
 const frame2 = () => {
     $('#sl2').addClass('inv')
@@ -20,7 +20,7 @@ const frame2 = () => {
     $('#sl3').removeClass('inv')
     setTimeout(() => {
         frame3()
-    }, 1000);
+    }, 2500);
 }
 const frame1 = () => {
     $('#sl1').addClass('inv')
@@ -28,14 +28,14 @@ const frame1 = () => {
     $('#sl2').removeClass('inv')
     setTimeout(() => {
         frame2()
-    }, 1000);
+    }, 2500);
 }
 const frame0 = () => {
     $('#sl1').addClass('animate__fadeInUp')
     $('#sl1').removeClass('inv')
     setTimeout(() => {
         frame1()
-    }, 1000);
+    }, 2500);
 }
 $(() => {
     frame0()

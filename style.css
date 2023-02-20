@@ -1,46 +1,93 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-.container{
-    max-width: 300px;
-    width: 100%;
-    position: relative;
-    height: 250px;
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.bg{
-    width: 100%;
-    background-image: url('./img/bg.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 250px;
-    position: relative;
+.container {
+  max-width: 300px;
+  width: 100%;
+  position: relative;
+  height: 250px;
+  overflow: hidden;
 }
-.first{
-    background-image: url('./img/bg.png');
+.bg {
+  width: 100%;
+  background-image: url("./img/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+  position: relative;
 }
-.second{
-    background-image: url('./img/bg2.png');
+.first {
+  background-image: url("./img/bg.png");
 }
-.third{
-    background-image: url('./img/bg3.png');
+.second {
+  background-image: url("./img/bg2.png");
 }
-.title{
-    max-width: 117px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+.third {
+  background-image: url("./img/bg3.png");
 }
-.main-title{
-    top: 110px;
+.title {
+  max-width: 117px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
-.bottom-title{
-    top: 207px;
-    max-width: 125px;
+.pulse {
+  animation: pulse 0.85s linear infinite;
+}
+.main-title {
+  top: 110px;
+}
+.bottom-title {
+  top: 207px;
+  max-width: 125px;
 }
 .inv {
-    display: none;
-    /* visibility: hidden; */
+  display: none;
+  /* visibility: hidden; */
+}
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
   }
+  50% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@media screen and (min-height: 251px) {
+  .container {
+    height: 600px;
+  }
+  .bg {
+    background-image: url("./img/bg_m.png");
+    height: 600px;
+  }
+  .first {
+    background-image: url("./img/bg_m.png");
+  }
+  .second {
+    background-image: url("./img/bg_m2.png");
+  }
+  .third {
+    background-image: url("./img/bg_m3.png");
+  }
+  .title {
+    max-width: 230px;
+  }
+  .main-title {
+    top: 195px;
+  }
+  .bottom-title {
+    top: 520px;
+    max-width: 250px;
+  }
+}
